@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "@/scenes/navbar";
 import Dashboard from "@/scenes/dashboard";
 
-function App() {
+const App: React.FC = () => {
   const theme = useMemo(() => createTheme(themeSettings), []);
   return (
     <div className="app">
@@ -26,6 +26,6 @@ function App() {
       </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
