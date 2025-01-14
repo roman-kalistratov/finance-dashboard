@@ -1,4 +1,5 @@
-import { Box, useMediaQuery, useTheme } from "@mui/material";
+import DashboardBox from "@/components/DashboardBox";
+import { Box, useMediaQuery } from "@mui/material";
 import React from "react";
 
 const gridTemplateLargeScreens = `
@@ -48,7 +49,6 @@ const gridTemplateSmallScreens = `
 
 const Dashboard: React.FC = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1200px)");
-  const { palette } = useTheme();
   return (
     <Box
       width="100%"
@@ -69,36 +69,16 @@ const Dashboard: React.FC = () => {
             }
       }
     >
-      <Box bgcolor="#fff" gridArea="a">
-        1
-      </Box>
-      <Box bgcolor="#fff" gridArea="b">
-        1
-      </Box>
-      <Box bgcolor="#fff" gridArea="c">
-        1
-      </Box>
-      <Box bgcolor="#fff" gridArea="d">
-        1
-      </Box>
-      <Box bgcolor="#fff" gridArea="e">
-        1
-      </Box>
-      <Box bgcolor="#fff" gridArea="f">
-        1
-      </Box>
-      <Box bgcolor="#fff" gridArea="g">
-        1
-      </Box>
-      <Box bgcolor="#fff" gridArea="h">
-        1
-      </Box>
-      <Box bgcolor="#fff" gridArea="i">
-        1
-      </Box>
-      <Box bgcolor="#fff" gridArea="j">
-        1
-      </Box>
+      <DashboardBox gridArea="a">1</DashboardBox>
+      <DashboardBox gridArea="b">1</DashboardBox>
+      <DashboardBox gridArea="c">1</DashboardBox>
+      <DashboardBox gridArea="d">1</DashboardBox>
+      <DashboardBox gridArea="e">1</DashboardBox>
+      <DashboardBox gridArea="f">1</DashboardBox>
+      <DashboardBox gridArea="g">1</DashboardBox>
+      <DashboardBox gridArea="h">1</DashboardBox>
+      <DashboardBox gridArea="i">1</DashboardBox>
+      <DashboardBox gridArea="j">1</DashboardBox>
     </Box>
   );
 };
