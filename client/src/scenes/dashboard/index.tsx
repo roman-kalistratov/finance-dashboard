@@ -1,6 +1,9 @@
 import DashboardBox from "@/components/DashboardBox";
 import { Box, useMediaQuery } from "@mui/material";
 import React from "react";
+import Row1 from "./Row1";
+import Row2 from "./Row2.";
+import Row3 from "./Row3";
 
 const gridTemplateLargeScreens = `
   "a b c"
@@ -69,16 +72,9 @@ const Dashboard: React.FC = () => {
             }
       }
     >
-      <DashboardBox gridArea="a">1</DashboardBox>
-      <DashboardBox gridArea="b">1</DashboardBox>
-      <DashboardBox gridArea="c">1</DashboardBox>
-      <DashboardBox gridArea="d">1</DashboardBox>
-      <DashboardBox gridArea="e">1</DashboardBox>
-      <DashboardBox gridArea="f">1</DashboardBox>
-      <DashboardBox gridArea="g">1</DashboardBox>
-      <DashboardBox gridArea="h">1</DashboardBox>
-      <DashboardBox gridArea="i">1</DashboardBox>
-      <DashboardBox gridArea="j">1</DashboardBox>
+      <Row1 />
+      <Row2 />
+      <Row3 />
     </Box>
   );
 };
